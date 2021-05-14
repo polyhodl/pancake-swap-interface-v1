@@ -8,11 +8,11 @@ import {
   Button,
   Link,
   Flex,
-  ExpandableLabel,
+  // ExpandableLabel,
   ArrowDownIcon,
   ErrorIcon,
   OpenNewIcon,
-} from '@pancakeswap-libs/uikit'
+} from '@polyhodl/uikit'
 
 const otherProjects = [
   {
@@ -100,9 +100,9 @@ const FirstCard = () => {
         <Card>
           <Flex justifyContent="space-between" alignItems="center" p="24px">
             <Text bold>Suggested projects</Text>
-            <ExpandableLabel expanded={isVisible} onClick={() => setIsVisible((prev) => !prev)}>
+            {/* <ExpandableLabel expanded={isVisible} onClick={() => setIsVisible((prev) => !prev)}>
               {isVisible ? 'Hide' : 'Details'}
-            </ExpandableLabel>
+            </ExpandableLabel> */}
           </Flex>
           <FoldableContent isVisible={isVisible}>
             <Text mb="16px">

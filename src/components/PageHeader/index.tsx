@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
-import { Heading, IconButton, Text, Flex, useModal, TuneIcon, HistoryIcon } from '@pancakeswap-libs/uikit'
+import { Heading, IconButton, Text, Flex, useModal } from '@polyhodl/uikit'
 import useI18n from 'hooks/useI18n'
 import SettingsModal from './SettingsModal'
 import RecentTransactionsModal from './RecentTransactionsModal'
@@ -36,15 +36,15 @@ const PageHeader = ({ title, description, children }: PageHeaderProps) => {
             </Text>
           )}
         </Details>
-        <IconButton variant="text" onClick={onPresentSettings} title={TranslateString(1200, 'Settings')}>
+        {/* <IconButton variant="text" onClick={onPresentSettings} title={TranslateString(1200, 'Settings')}>
           <TuneIcon width="24px" color="currentColor" />
-        </IconButton>
+        </IconButton> */}
         <IconButton
           variant="text"
           onClick={onPresentRecentTransactions}
           title={TranslateString(1202, 'Recent transactions')}
         >
-          <HistoryIcon width="24px" color="currentColor" />
+          {/* <HistoryIcon width="24px" color="currentColor" /> */}
         </IconButton>
       </Flex>
       {children && <Text mt="16px">{children}</Text>}

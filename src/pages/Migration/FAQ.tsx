@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Heading, Text, Card, CardHeader, CardBody, Image } from '@pancakeswap-libs/uikit'
+import { Heading, Text, Card, CardHeader, CardBody, Image } from '@polyhodl/uikit'
 import FoldableText from 'components/FoldableText'
 import Container from 'components/Container'
 import useI18n from 'hooks/useI18n'
 import config from './config'
 
 const Wrapper = styled(Container)`
-  background: ${({ theme }) => theme.colors.gradients.violetAlt};
+  background: ${({ theme }) => theme.colors.gradients.bubblegum};
 `
 
 const FAQ = () => {
